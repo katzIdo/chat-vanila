@@ -18,7 +18,7 @@ html, body {
     overflow: auto;
     max-height: 90%;
     .list {
-      width: 50%;
+      width: 100%;
     }
     .typers {
       font-size: 10px;
@@ -34,6 +34,7 @@ html, body {
 
 
 .message {
+  width: 50%;
   position: relative;
   padding: 12px 15px;
   background: white;
@@ -69,8 +70,9 @@ html, body {
 
   &.self {
     background: $blue;
+    margin-left: auto;
     color: white;
-
+    flex-direction: row-reverse;
     &.with-arrow {
       &:before {
         left: initial;
